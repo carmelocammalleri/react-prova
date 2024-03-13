@@ -1,0 +1,13 @@
+.menu-nav{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-nav li{
+  margin-right: 15px;
+  list-style: none;
+}
+
+.menu-nav li a{
+  color: orange;
+}
