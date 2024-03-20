@@ -21,6 +21,9 @@ class Board extends React.Component {
       numberSquare.push(i);
     }
 
+    const arrayNumberTris = numberSquare.map((square) => <button className='square' onClick={() => console.log('click')}>{square}</button>);
+    return arrayNumberTris;
+  }
 }
 
 export default Main
