@@ -15,13 +15,16 @@ function Main() {
 }
 
 class Board extends React.Component {
+  
   render(){
     let numberSquare= [];
     for(let i=1; i<10; i++){
       numberSquare.push(i);
     }
 
-    const arrayNumberTris = numberSquare.map((square) => <button className='square' onClick={() => console.log('click')}>{square}</button>);
+    const arrayNumberTris = numberSquare.map((square) => <button className='square' onClick={() => console.log(square)}>
+   
+    </button>)
     return arrayNumberTris;
   }
 }
