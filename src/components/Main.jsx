@@ -14,4 +14,13 @@ function Main() {
   );
 }
 
+class Board extends React.Component {
+  render(){
+    let numberSquare= [];
+    for(let i=1; i<10; i++){
+      numberSquare.push(i);
+    }
+
+}
+
 export default Main
