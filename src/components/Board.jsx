@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 function Board () {
+
+  const [sign, setSign]= useState("x")
+
   let isClicked = false;
   function handleClick(e){
     if(!isClicked){
@@ -13,7 +18,7 @@ function Board () {
   for(let i=1; i<10; i++){
     numberSquare.push(i);
   }
-    const arrayNumberTris = numberSquare.map((square) => <button key={square} id={square} className='square' value={square} onClick={handleClick}> {isClicked? 'x':'o'}
+    const arrayNumberTris = numberSquare.map((square) => <button key={square} id={square} className='square' value={square} onClick={()=> setSign((sign)=> 'zzz')}> {sign}
     </button>)
 
  return arrayNumberTris;
